@@ -50,7 +50,7 @@ Gate-Level Simulation
 
 ### Clock Tree Synthesis
 
-![](results/layout/clock_tree.jpeg)
+![](results/layout/clock_tree_synthesis.jpeg)
 
 ---
 
