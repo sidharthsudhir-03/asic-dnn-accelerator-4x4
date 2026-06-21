@@ -1,6 +1,6 @@
 # 4×4 DNN Hardware Accelerator ASIC
 
-SystemVerilog implementation of a pipelined 4×4 dot-product accelerator for neural network workloads, taken through a complete RTL-to-GDSII ASIC design flow using Cadence Genus and Cadence Innovus in a 45 nm technology node.
+SystemVerilog implementation of a pipelined 4×4 dot-product accelerator for neural network workloads, taken through an RTL-to-GDSII ASIC implementation flow using Cadence Genus and Cadence Innovus in a 45 nm technology node.
 
 ---
 
@@ -42,6 +42,18 @@ Gate-Level Simulation
 
 ---
 
+## Physical Design Views
+
+| Routed Layout                         | Placement View                         |
+| ------------------------------------- | -------------------------------------- |
+| ![](results/layout/routed_layout.png) | ![](results/layout/placement_view.png) |
+
+### Clock Tree Synthesis
+
+![](results/layout/clock_tree.png)
+
+---
+
 ## Architecture
 
 The accelerator implements a pipelined multiply-accumulate datapath optimized for matrix and vector operations used in neural network inference. Internal memories store operands and intermediate results while control logic coordinates computation, memory accesses, and result generation.
@@ -77,8 +89,6 @@ The accelerator implements a pipelined multiply-accumulate datapath optimized fo
 
 ## Verification
 
-The design was verified at multiple stages of the implementation flow:
-
 ### RTL Simulation
 
 * Functional verification using ModelSim
@@ -89,13 +99,13 @@ The design was verified at multiple stages of the implementation flow:
 
 ### Post-Layout Simulation
 
-* Gate-level simulation using extracted netlists
+* Gate-level simulation using post-layout netlists
 * Timing-aware verification
 * Clock tree validation
 * Delay analysis
 * Glitch observation and timing characterization
 
-All testbench validation cases completed successfully with zero functional errors.
+All verification test cases completed successfully with zero functional errors.
 
 ---
 
