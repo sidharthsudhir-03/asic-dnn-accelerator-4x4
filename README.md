@@ -102,22 +102,20 @@ All testbench validation cases completed successfully with zero functional error
 ## Repository Structure
 
 ```text
-rtl/
-├── SystemVerilog source files
-
-tb/
-├── Verification environment
-├── Testbenches
-
-reports/
-├── Design reports
-├── Timing reports
-├── Area reports
-
-results/
-├── RTL simulation results
-├── Post-layout simulation results
-├── Layout screenshots
+asic-dnn-accelerator-4x4/
+├── docs/
+│   └── images/
+├── rtl/
+├── tb/
+├── reports/
+├── results/
+│   ├── rtl_simulation/
+│   ├── post_layout_simulation/
+│   └── layout/
+├── scripts/
+│   ├── genus/
+│   └── innovus/
+└── README.md
 ```
 
 ---
