@@ -46,11 +46,11 @@ Gate-Level Simulation
 
 | Routed Layout                         | Placement View                         |
 | ------------------------------------- | -------------------------------------- |
-| ![](results/layout/routed_layout.png) | ![](results/layout/placement_view.png) |
+| ![](results/layout/routed_layout.jpeg) | ![](results/layout/placement_view.jpeg) |
 
 ### Clock Tree Synthesis
 
-![](results/layout/clock_tree.png)
+![](results/layout/clock_tree.jpeg)
 
 ---
 
